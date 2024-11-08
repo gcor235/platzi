@@ -2,8 +2,9 @@ import statistics
 import csv
 
 # Leer los datos de ventas mensuales desde un archivo CSV
+ruta = "C:\\Users\\coron\\OneDrive\\Escritorio\\Informatica Teorica\\\Nueva carpeta\\monthly_sales.csv"
 monthly_sales = {}
-with open('monthly_sales.csv', mode='r') as file:
+with open(ruta, mode='r') as file:
     reader = csv.DictReader(file)
     for row in reader:
         month = row['month']
